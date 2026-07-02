@@ -1,0 +1,39 @@
+{
+  "dag_configs": [
+    {
+      "dag_config": {
+        "dag_id": "dv_sports_test1",
+        "schedule": "30 0 * * *",
+        "start_date": "2024-01-01",
+        "tz_info": null,
+        "catchup": null,
+        "tags": [
+          "sports"
+        ],
+        "doc_md": null,
+        "orchestration": null
+      },
+      "job_config": {
+        "env_variables": {
+          "DBT_EXECUTION_PROJECT": "dv-dev-eu-w1-sports-elt",
+          "DBT_IMPERSONATE_SERVICE_ACCOUNT": "analytics-dev@dv-dev-eu-w1-sports-elt.iam.gserviceaccount.com",
+          "DBT_PROJECT": "dv-dev-eu-w1-sports-data",
+          "DBT_PROFILE": "cloud-run",
+          "DBT_LOCATION": "europe-west1",
+          "DBT_SCHEMA": null,
+          "DBT_DOMAIN_NAME": "sports"
+        },
+        "steps": [
+          {
+            "step_name": "run_public_models",
+            "task_dataset_prefix": null,
+            "dbt_invocation_command": null,
+            "dbt_flags": {},
+            "source_vars": null
+          }
+        ],
+        "run_time_variables": null
+      }
+    }
+  ]
+}
