@@ -1,0 +1,11 @@
+name: dv-sports-elt
+image: ghcr.io/hasan-tavakoli/dv-sports-etl:feature-add-model-daily_active_customers-1782992764-24fc831
+service_account: analytics-dev@dv-dev-eu-w1-sports-elt.iam.gserviceaccount.com
+region: europe-west1
+resources:
+  limits:
+    cpu: 1000m
+    memory: 2Gi
+  requests:
+    cpu: 500m
+    memory: 1Gi
