@@ -3,7 +3,7 @@
     {
       "dag_config": {
         "dag_id": "dv_sports_elt",
-        "schedule": "30 0 * * *",
+        "schedule": "0 11 * * *",
         "start_date": "2024-01-01",
         "tz_info": null,
         "catchup": null,
