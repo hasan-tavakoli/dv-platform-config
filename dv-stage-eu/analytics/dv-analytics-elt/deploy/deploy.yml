@@ -1,0 +1,11 @@
+name: dv-analytics-elt
+image: ghcr.io/hasan-tavakoli/dv-sports-etl:main-20260705102543-35a4c7f
+service_account: analytics-dev@dv-dev-eu-w1-analytics-elt.iam.gserviceaccount.com
+region: europe-west1
+resources:
+  limits:
+    cpu: 1000m
+    memory: 2Gi
+  requests:
+    cpu: 500m
+    memory: 1Gi
